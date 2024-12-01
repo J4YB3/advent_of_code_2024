@@ -103,7 +103,7 @@ pub fn part_2() {
         
         // Similarity score should increase by the occurrences in right list times the current number,
         // only if the numbers are equal. This might not be the case, because a new right number might
-        // have been picked inside the first if condition.
+        // have been picked inside the while loop above
         if *current_left_number == current_right_number {
             similarity_score += current_left_number * current_right_sum;
         }
