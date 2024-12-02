@@ -94,7 +94,7 @@ mod test {
 
     #[test]
     fn test_part_1() {
-        let result = part_1("./inputs/day_2_test.txt");
+        let result = part_1("./inputs/day_02_test.txt");
         assert_eq!(result, 2);
     }
 
@@ -116,7 +116,7 @@ mod test {
 
     #[test]
     fn test_part_2() {
-        let result = part_2("./inputs/day_2_test.txt");
+        let result = part_2("./inputs/day_02_test.txt");
         assert_eq!(result, 4);
     }
 }

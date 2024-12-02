@@ -6,7 +6,7 @@ use core::slice::Iter;
  * The vectors are already sorted from smallest to largest numbers
  */
 fn preprocess() -> (Vec<u32>, Vec<u32>) {
-    let path = "inputs/day_1.txt";
+    let path = "inputs/day_01.txt";
     let contents = fs::read_to_string(path).expect(path);
     let lines_iterator = contents.lines().map(|x| x.to_string());
 
