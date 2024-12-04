@@ -30,9 +30,8 @@ fn count_xmas_apperances_from(chars: &Vec<Vec<char>>, x: usize, y: usize) -> u32
     let max_y: i32 = (chars.len() as i32) - 1;
     let mut sum: u32 = 0;
 
-    'outer: for i in 0..directions.len() {
+    'outer: for direction in directions {
         // Set up the local variables for each direction iteration
-        let direction = &directions[i];
         let mut current_offset = direction.clone();
 
         for expected_character in &expected_characters {
@@ -45,9 +44,7 @@ fn count_xmas_apperances_from(chars: &Vec<Vec<char>>, x: usize, y: usize) -> u32
             }
 
             // We know now, that we're in bounds, so we can parse the i32 as usize to index the vector
-            let x_index = current_x as usize;
-            let y_index = current_y as usize;
-            if chars[y_index][x_index] != *expected_character {
+            if chars[current_y as usize][current_x as usize] != *expected_character {
                 // We don't want to use break here, because then the sum would go up
                 continue 'outer;
             }
