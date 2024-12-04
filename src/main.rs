@@ -1,6 +1,7 @@
 pub mod day_1;
 pub mod day_2;
 pub mod day_3;
+pub mod day_4;
 
 fn main() {
     // day_1::part_1();
@@ -11,4 +12,7 @@ fn main() {
 
     // day_3::part_1("./inputs/day_03.txt");
     // day_3::part_2("./inputs/day_03.txt");
+
+    // day_4::part_1("./inputs/day_04.txt");
+    // day_4::part_2("./inputs/day_04.txt");
 }
