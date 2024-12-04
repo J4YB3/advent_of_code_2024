@@ -34,13 +34,11 @@ fn count_xmas_apperances_from(chars: &Vec<Vec<char>>, x: usize, y: usize) -> u32
         // Set up the local variables for each direction iteration
         let direction = &directions[i];
         let mut current_offset = direction.clone();
-        let local_x = x;
-        let local_y = y;
 
         for expected_character in &expected_characters {
             // Find out if we are still in bounds of the vector
-            let current_x: i32 = (local_x as i32) + current_offset.0;
-            let current_y: i32 = (local_y as i32) + current_offset.1;
+            let current_x: i32 = (x as i32) + current_offset.0;
+            let current_y: i32 = (y as i32) + current_offset.1;
             if current_x > max_x || current_x < 0 || current_y > max_y || current_y < 0 {
                 // We don't want to use break here, because then the sum would go up
                 continue 'outer;
