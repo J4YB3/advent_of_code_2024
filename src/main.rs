@@ -1,9 +1,12 @@
+use std::time::Instant;
+
 pub mod day_01;
 pub mod day_02;
 pub mod day_03;
 pub mod day_04;
 pub mod day_05;
 pub mod day_06;
+pub mod day_07;
 
 fn main() {
     // day_01::part_1();
@@ -22,5 +25,12 @@ fn main() {
     // day_05::part_2("./inputs/day_05.txt");
 
     // day_06::part_1("./inputs/day_06.txt");
-    day_06::part_2("./inputs/day_06.txt");
+    // day_06::part_2("./inputs/day_06.txt");
+
+    // day_07::part_1("./inputs/day_07.txt");
+    let start = Instant::now();
+    day_07::part_2("./inputs/day_07.txt");
+    let duration = start.elapsed();
+
+    println!("Spent {:?}", duration);
 }
