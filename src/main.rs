@@ -9,6 +9,8 @@ pub mod day_06;
 pub mod day_07;
 pub mod day_08;
 pub mod day_09;
+pub mod day_10;
+pub mod day_11;
 
 fn main() {
     let start = Instant::now();
@@ -37,7 +39,13 @@ fn main() {
     // day_08::part_2("./inputs/day_08.txt");
 
     // day_09::part_1("./inputs/day_09.txt");
-    day_09::part_2("./inputs/day_09.txt");
+    // day_09::part_2("./inputs/day_09.txt");
+
+    // day_10::part_1("./inputs/day_10.txt");
+    // day_10::part_2("./inputs/day_10.txt");
+
+    // day_11::both_parts("./inputs/day_11.txt", 25);
+    day_11::both_parts("./inputs/day_11.txt", 200);
 
     println!("Spent {:?}", start.elapsed());
 }
